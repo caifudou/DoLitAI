@@ -2,24 +2,34 @@
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI 在身边 · 让智能融入日常</title>
     <meta name="description" content="AI 不再是遥远的技术概念，而是此刻就在你身边的伙伴。探索它在生活中的真实应用场景。" />
     <script type="module">
       if (import.meta.hot?.on) {
         import.meta.hot.on('vite:error', (error) => {
-          if (error.err) {
-            console.error(
-              [error.err.message, error.err.frame].filter(Boolean).join('\n'),
-            )
-          }
+          console.error(
+            [error.err.message, error.err.frame].filter(Boolean).join('\n'),
+          )
         })
       }
     </script>
   </head>
-  <body>
-    <div id="root"></div>
+  <body style="background:#050816;color:#e4e8ef;margin:0;font-family:'Noto Sans SC','PingFang SC','Microsoft YaHei',system-ui,sans-serif;">
+    <div id="root">
+      <div style="padding:60px 24px;max-width:760px;margin:0 auto;">
+        <div style="font-size:22px;color:#5dffbd;margin-bottom:16px;">AI 在身边</div>
+        <h1 style="font-size:32px;line-height:1.4;margin:0 0 20px 0;color:#e4e8ef;">让每一刻都更从容、智能</h1>
+        <p style="line-height:1.8;color:#cbd3df;">页面正在加载，请稍候...</p>
+      </div>
+    </div>
+    <noscript>
+      <div style="padding:60px 24px;max-width:760px;margin:0 auto;">
+        <h1 style="font-size:24px;color:#e4e8ef;">请启用 JavaScript 后访问此页面</h1>
+        <p style="line-height:1.8;color:#cbd3df;">本网站使用 React 构建，需要启用浏览器的 JavaScript 才能正常显示。</p>
+      </div>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
