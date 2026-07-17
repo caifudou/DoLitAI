@@ -1,4 +1,5 @@
 import { Sparkles, ArrowRight, Circle } from "lucide-react";
+import { HERO_STATS } from "@/data";
 
 export default function Hero() {
   return (
@@ -50,12 +51,7 @@ export default function Hero() {
         </div>
 
         <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 animate-slide-up" style={{ animationDelay: "240ms" }}>
-          {[
-            { k: "每日陪伴", v: "24h" },
-            { k: "应用场景", v: "10+" },
-            { k: "用户覆盖", v: "亿级" },
-            { k: "响应速度", v: "秒级" },
-          ].map((item) => (
+          {HERO_STATS.map((item) => (
             <div
               key={item.k}
               className="rounded-2xl border border-white/5 bg-white/[0.02] p-5 hover:border-neon-400/20 transition"

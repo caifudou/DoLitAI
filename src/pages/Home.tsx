@@ -1,9 +1,9 @@
-import Nav from "@/components/Nav";
-import Hero from "@/components/Hero";
-import Features from "@/components/Features";
-import Cases from "@/components/Cases";
-import Future from "@/components/Future";
-import Footer from "@/components/Footer";
+import Nav from "@/components/layout/Nav";
+import Footer from "@/components/layout/Footer";
+import Hero from "@/components/sections/Hero";
+import Features from "@/components/sections/Features";
+import Cases from "@/components/sections/Cases";
+import Future from "@/components/sections/Future";
 
 export default function Home() {
   return (

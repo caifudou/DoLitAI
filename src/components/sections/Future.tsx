@@ -1,4 +1,4 @@
-import { Compass, Zap, Shield } from "lucide-react";
+import { FUTURE_ITEMS } from "@/data";
 
 export default function Future() {
   return (
@@ -17,11 +17,7 @@ export default function Future() {
               </p>
             </div>
             <div className="grid gap-4">
-              {[
-                { icon: Compass, title: "情境感知", desc: "理解你当下的场景，主动提供建议。" },
-                { icon: Zap, title: "即时响应", desc: "在毫秒级的时间内完成推理与生成。" },
-                { icon: Shield, title: "隐私优先", desc: "本地化模型与端侧能力，守护数据安全。" },
-              ].map((item) => {
+              {FUTURE_ITEMS.map((item) => {
                 const Icon = item.icon;
                 return (
                   <div
